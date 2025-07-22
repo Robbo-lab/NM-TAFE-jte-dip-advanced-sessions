@@ -24,7 +24,7 @@ cd REPO_NAME
 The upstream is the **original repository** you forked from (e.g., your instructor's or the class repo).
 
 ```bash
-git remote add upstream https://github.com/NM-TAFE/civ-ipos-sessions.git
+git remote add upstream https://github.com/NM-TAFE/adv-dip-sessions.git
 ```
 
 You can check that both remotes are set correctly:
@@ -38,8 +38,8 @@ Expected output:
 ```
 origin    https://github.com/YOUR_USERNAME/REPO_NAME.git (fetch)
 origin    https://github.com/YOUR_USERNAME/REPO_NAME.git (push)
-upstream  https://github.com/NM-TAFE/civ-ipos-sessions.git (fetch)
-upstream  https://github.com/NM-TAFE/civ-ipos-sessions.git (push)
+upstream  https://github.com/NM-TAFE/adv-dip-sessions.git (fetch)
+upstream  https://github.com/NM-TAFE/adv-dip-sessions.git (push)
 ```
 
 ---
