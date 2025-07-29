@@ -21,8 +21,8 @@
 # print('id', id(a))
 # input()
 # print()
-# print("Now, let's do a mutable!")
-# input("Ready? Let's go...")
+# print("Now, let'tests do a mutable!")
+# input("Ready? Let'tests go...")
 # a = []
 # print("a = []")
 # print('id', id(a))

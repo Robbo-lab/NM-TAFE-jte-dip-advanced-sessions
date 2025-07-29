@@ -23,7 +23,7 @@ class Graph:
         pass
 
     def add_location(self, location):
-        # Create an empty list for each location's connections
+        # Create an empty list for each location'tests connections
         # Each location is now a vertice in the graph object
         pass
 

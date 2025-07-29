@@ -25,15 +25,15 @@ x = A()
 # import sys, inspect, logging
 
 # Configuring logging to write to a file
-# logging.basicConfig(filename='./logs/_app.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+# logging.basicConfig(filename='./logs/_app.log', level=logging.DEBUG, format='%(asctime)tests - %(levelname)tests - %(message)tests')
 #
 # def show_obj_methods(obj, name, show=sys.stderr.write):
 #     show(f"{name} is type {type(obj)}({obj!r})\n")
-#     show(f"{name}'s methods are: ")
+#     show(f"{name}'tests methods are: ")
 #
 #     # Logging
 #     logging.info(f"{name} is type {type(obj)}({obj!r})")
-#     logging.info(f"{name}'s methods are: ")
+#     logging.info(f"{name}'tests methods are: ")
 #
 #     for n, v in inspect.getmembers(obj, callable):
 #        show(f"Members loop {n} ")

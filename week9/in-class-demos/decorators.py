@@ -1,7 +1,7 @@
 import logging
 
 # Setup basic config for logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(level=logging.INFO, format='%(asctime)tests - %(levelname)tests - %(message)tests')
 
 # Our decorator
 def logger(func):

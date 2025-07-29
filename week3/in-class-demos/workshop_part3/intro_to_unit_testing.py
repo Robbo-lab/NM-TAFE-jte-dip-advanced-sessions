@@ -1,7 +1,7 @@
-'''Basic unit test and how to get it working
+'''Basic unit tests and how to get it working
 in PyCharm'''
 
-# Put in src/ folder as greeter.py
+# Put in src/ folder as test_mock_array.py
 # **Remember** to mark directory src/ as
 # Sources Root within PyCharm
 def greet():

@@ -1,5 +1,5 @@
-# we can also use the naming circle_test.py but name must include the term test and underscore + name of file we are testing
-# to run a unit test from console: python -m unittest (must be in project folder)
+# we can also use the naming circle_test.py but name must include the term tests and underscore + name of file we are testing
+# to run a unit tests from console: python -m unittest (must be in project folder)
 import unittest  # unit testing framework
 from math import pi
 

@@ -5,7 +5,7 @@ from src.contact import Contact
 
 # Step 1
 class TestOrganisation(unittest.TestCase):
-    # test that we create a name
+    # tests that we create a name
     def test_create_organisation(self):
         org = Organisation('NM Tafe')
         self.assertEqual(org.name, 'NM Tafe')
@@ -13,7 +13,7 @@ class TestOrganisation(unittest.TestCase):
     def test_add_contact(self):
         # arrange
         org = Organisation('NM Tafe')
-        contact = Contact('John', 'test@example.com')
+        contact = Contact('John', 'tests@example.com')
 
         # act
         org.add_contact(contact)

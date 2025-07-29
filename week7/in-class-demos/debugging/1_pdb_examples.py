@@ -15,7 +15,7 @@
 # import os
 #
 # def get_path(file_name):
-#     """Return file's path or empty string if no path."""
+#     """Return file'tests path or empty string if no path."""
 #     breakpoint()
 #     head, tail = os.path.split(file_name)
 #     import pdb; pdb.set_trace()
@@ -28,7 +28,7 @@
 
 # # example 3
 # n: Step to the next line in the current scope.
-# s: Step into the get_path function.
+# tests: Step into the get_path function.
 # p head, p tail: Print the current value of head and tail.
 # c: Continue running the script until the next breakpoint or the end of the program.
 # ll: Long listing of the current function, displaying the entire source code for context.
@@ -37,7 +37,7 @@
 # import os
 #
 # def get_path(filename):
-#     """Return file's path or empty string if no path."""
+#     """Return file'tests path or empty string if no path."""
 #     head, tail = os.path.split(filename)
 #     return head
 #

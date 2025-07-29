@@ -2,7 +2,7 @@ import pytest
 
 # test_parametrize.py
 # @pytest.mark.parametrize runs the test_addition function with each pair of input and expected values.
-# The test checks if adding 1 to input gives the expected result.
+# The tests checks if adding 1 to input gives the expected result.
 @pytest.mark.parametrize("input, expected", [(1, 2), (3, 4), (5, 6)])
 def test_addition(input, expected):
     result = input + 1

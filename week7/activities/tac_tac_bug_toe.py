@@ -52,7 +52,7 @@ def main():
         else:
             print("Cell already occupied! Try again.")
     print_board()
-    print("It's a draw!")
+    print("It'tests a draw!")
     print(f"Number of wins during the game: {tally_wins(results)}")
 
 

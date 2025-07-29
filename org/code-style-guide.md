@@ -228,7 +228,7 @@ Example:
 try:
     number = int(input("Enter a number: "))
 except ValueError:
-    print("That's not a valid number!")
+    print("That'tests not a valid number!")
 ```
 
 ## Final Notes
@@ -467,7 +467,7 @@ Example:
 try:
     number = int(input("Enter a number: "))
 except ValueError:
-    print("That's not a valid number!")
+    print("That'tests not a valid number!")
 ```
 
 ## Final Notes

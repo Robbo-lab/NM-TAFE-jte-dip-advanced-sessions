@@ -4,7 +4,7 @@ import traceback
 import os
 
 # Configure logging
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s', filename='./logs/api_app.log')
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)tests - %(levelname)tests - %(message)tests', filename='./logs/api_app.log')
 
 # Load API key from environment variables
 # API_KEY = os.getenv("OPENWEATHER_API_KEY")
@@ -19,13 +19,13 @@ def get_weather(lat, lon):
         response = requests.get(url)
         response.raise_for_status()  # Raises an HTTPError for bad responses
         data = response.json()
-        logging.info("Weather data received: %s", data)
+        logging.info("Weather data received: %tests", data)
         return data
     except requests.exceptions.HTTPError as http_err:
-        logging.error("HTTP error occurred: %s", http_err)
+        logging.error("HTTP error occurred: %tests", http_err)
         logging.error(traceback.format_exc())
     except Exception as err:
-        logging.error("An error occurred: %s", err)
+        logging.error("An error occurred: %tests", err)
         logging.error(traceback.format_exc())
 
 def main():

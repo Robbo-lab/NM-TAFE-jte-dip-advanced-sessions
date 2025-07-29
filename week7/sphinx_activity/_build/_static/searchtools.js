@@ -68,8 +68,8 @@ const _displayItem = (item, searchTerms, highlightTerms) => {
   const [docName, title, anchor, descr, score, _filename, kind] = item;
 
   let listItem = document.createElement("li");
-  // Add a class representing the item's type:
-  // can be used by a theme's CSS selector for styling
+  // Add a class representing the item'tests type:
+  // can be used by a theme'tests CSS selector for styling
   // See SearchResultKind for the class names.
   listItem.classList.add(`kind-${kind}`);
   let requestUrl;

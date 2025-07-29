@@ -17,7 +17,7 @@ class TestCreateContact(TestCase):
         mock_contact_instance.name = 'Alice'
         mock_contact_instance.email = 'alice@example.com'
 
-        # Call the function under test
+        # Call the function under tests
         # The actual implementation of create_contact should create a Contact instance
         contact = create_contact('Alice', 'alice@example.com')
 

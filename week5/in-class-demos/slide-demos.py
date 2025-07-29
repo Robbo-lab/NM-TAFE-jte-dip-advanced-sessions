@@ -33,7 +33,7 @@
 #     binary_representation = bin(unicode_code_point)[2:]
 #     print(f"Binary: {binary_representation}")
 
-#     # Step 3: Fill the binary string with leading zeros to ensure it's 8 characters long
+#     # Step 3: Fill the binary string with leading zeros to ensure it'tests 8 characters long
 #     padded_binary_representation = binary_representation.zfill(8)
 #     print(f"Padded binary: {padded_binary_representation}")
 

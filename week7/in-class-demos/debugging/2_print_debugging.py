@@ -5,10 +5,10 @@ import pprint
 import traceback
 
 # Set up logging
-# logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+# logging.basicConfig(level=logging.DEBUG, format='%(asctime)tests - %(levelname)tests - %(message)tests')
 
 # Configuring logging to write to a file
-logging.basicConfig(filename='./logs/_app.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='./logs/_app.log', level=logging.DEBUG, format='%(asctime)tests - %(levelname)tests - %(message)tests')
 
 # Logging levels
 logging.debug("This is a debug message")
@@ -24,7 +24,7 @@ def log_message(message):
     """Prints a message with contextual information."""
     caller = inspect.stack()[1]
     timestamp = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-    pprint.pprint(caller) # test for the method sending the error
+    pprint.pprint(caller) # tests for the method sending the error
     logging.info(f"Log Message output: [{timestamp}] {caller.function} (line {caller.lineno}): {message}")
 
 def conditional_print(message):
@@ -65,4 +65,4 @@ except Exception as error:
     logging.error(f"An unexpected error occurred: {error}")
     traceback.print_exc()
     traceback_string = traceback.format_exc()
-    logging.error("Unhandled exception: %s\n%s", error, traceback_string)
+    logging.error("Unhandled exception: %tests\n%tests", error, traceback_string)
