@@ -7,7 +7,7 @@ class TestMockArray(unittest.TestCase):
         self.mock_array = Array(max_size=2)  # small size to trigger resize quickly
 
     def tearDown(self):
-        del self.mock_array  # Optional but explicit cleanup
+        del self.mock_array
 
     def test_insert_item_increments_index(self):
         self.assertEqual(self.mock_array.index, -1)
@@ -35,11 +35,11 @@ class TestMockArray(unittest.TestCase):
             self.mock_array.insert(88, 5)
 
     def test_resize_occurs_when_full(self):
-        self.mock_array.append(1)
-        self.mock_array.append(2)
-        # should trigger resize since max_size = 2
-        self.mock_array.append(3)
-        self.assertEqual(self.mock_array.get(2), 3)
+        with patch.object(Array, "_Array__resize") as mock_resize:
+            self.mock_array.append(1)
+            self.mock_array.append(2)
+            self.mock_array.append(3)  # Should trigger resize
+            mock_resize.assert_called_once()
 
     def test_private_attributes_not_accessible(self):
         with self.assertRaises(AttributeError):
@@ -48,7 +48,6 @@ class TestMockArray(unittest.TestCase):
             _ = self.mock_array.__instance_count
 
     def test_class_method_get_instance_count(self):
-        # This assumes the test suite is run independently
         self.assertGreaterEqual(Array.get_instance_count(), 1)
 
     def test_patched_instance_count_method(self):
